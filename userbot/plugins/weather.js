@@ -10,22 +10,22 @@ const Language = require('../../language');
 const Lang = Language.getString('weather');
 
 module.exports.run = async (bot, message, args) => {
-    let konum = args[0];
+    let lokasi = args[0];
     if (!args[0]) {
         Owen.editmsg(message,Lang.NEED_LOCATION)
         return
     }
     
-    message.delete();
+   // message.delete();
     
     message.channel.send("", {
         files: [
-            `http://wttr.in/${konum}_0tqp_lang=tr.png`
+            `https://wttr.in/${lokasi}_0tqp_transparency=100_lang=id.png`
         
         ],
           
     })
-    message.channel.send(`**DisOwen Tarafından ${konum} Hava durumu verileri bulundu.**`)
+    message.channel.send(`**Data cuaca daerah ${lokasi} ditemukan.**`)
         
         
           
@@ -34,6 +34,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     command: "weather",
-    usage: "istanbul",
+    usage: "jakarta",
     description: `${Lang.WEATHER_DESC}`
 }
