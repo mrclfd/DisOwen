@@ -1,7 +1,7 @@
 {
   "name": "DisOwen ",
   "description": "The world first Discord Userbot",
-  "repository": "https://github.com/Ber4tbey/disowen",
+  "repository": "https://github.com/mrclfd/disowen",
   "logo": "https://i.hizliresim.com/60dgunt.jpg",
   "keywords": ["node", "discord", "owen"],
    "stack": "container",
