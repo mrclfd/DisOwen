@@ -1,6 +1,6 @@
 FROM ber4tbey/disowen:latest
 
-RUN git clone $GITHUB_REPO_URL /root/DisOwen/
+RUN git clone https://github.com/mrclfd/DisOwen /root/DisOwen/
 WORKDIR /root/DisOwen/
 RUN npm install 
 RUN npm install supervisor -g
