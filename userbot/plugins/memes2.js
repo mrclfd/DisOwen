@@ -522,6 +522,6 @@ module.exports.run = async(client, message) => {
 };
 
 module.exports.config = {
-  command: "coli",
+  command: "coli2",
   description: `y`
 }
