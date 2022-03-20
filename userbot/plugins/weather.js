@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
     
     message.channel.send("", {
         files: [
-            `https://wttr.in/${lokasi}_0tqp_transparency=100_lang=id.png`
+            `https://wttr.in/${lokasi}_0tqp_lang=id.png`
         
         ],
           
