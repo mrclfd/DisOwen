@@ -20,7 +20,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v0.2.0 Public Beta',
     TOKEN: process.env.BOT_TOKEN === undefined ? '' : process.env.BOT_TOKEN,
-    PREFIX: process.env.PREFIX === undefined ? '.' : process.env.PREFIX,
+    PREFIX: process.env.PREFIX === undefined ? ',' : process.env.PREFIX,
     STAT: process.env.STATUS === undefined ? 'online' : process.env.STATUS,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE,
     API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
@@ -28,7 +28,7 @@ module.exports = {
     BRANCH: 'master',
     DATABASE_URL: DATABASE_URL,
     DATABASE: DATABASE_URL === './disowen.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
-    AFK_MESSAGE: process.env.AFK_MESSAGE === undefined ? '```Hayat çok kısa, yapacak çok şey var...\nOnlardan birini yapıyorum..```' : process.env.AFK_MESSAGE,
+    AFK_MESSAGE: process.env.AFK_MESSAGE === undefined ? "*I'm not available right now.*" : process.env.AFK_MESSAGE,
     BOTLOG: process.env.BOTLOG === undefined ? false : process.env.BOTLOG,
     BOTLOG_CHATID: process.env.BOTLOG_CHATID === undefined ? '0' : process.env.BOTLOG_CHATID,    
     }
