@@ -2,7 +2,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WeebProject - Marcel Faraday
-*/
+
 
 const Discord = require('discord.js-owen');
 const Owen = require("../../bot");
@@ -22,7 +22,7 @@ const gagal = "*Perhitungan Gagal ❌*\n*Kesalahan:* \n"
             catch (err) { return await message.channel.send(message, gagal + err);
             }
         }
-}
+} */
  /*       else if (match[1].includes('-')) { var split = match[1].split('-'), sonsayicik = split[1], ilksayicik = split[0] 
             var result = ilksayicik - sonsayicik
             try { await message.client.sendMessage(message.jid, sukses + result, MessageType.text) }
